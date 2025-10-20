@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelbe Yousey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Shelbe Yousey</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Hi, I'm</span>
+                    <span class="hero-name">Shelbe Yousey</span>
+                </h1>
+                <p class="hero-subtitle">Artificial Intelligence Engineer &amp; Full-Stack Developer</p>
+                
+                <p class="hero-tagline">Building the future, one line of code at a time</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <span class="material-icons">work</span>
+                        View My Work
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                        <span class="material-icons">email</span>
+                        Let's Connect
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                   <img
+        src="https://media.licdn.com/dms/image/v2/D4E03AQHC-er9xy6S7A/profile-displayphoto-scale_400_400/B4EZmJsz90HgAg-/0/1758951850516?e=1763596800&v=beta&t=vQy5d-so6IKFadcP5r61VmrtZrrOpymIBoQu2bECw64"
+        alt="My LinkedIn Profile"
+    style="width: 75%; height: 75%; object-fit: cover; border-radius: 50%;"
+    />
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="material-icons">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate computer science student at the University of Alabama with a strong interest in artificial intelligence—especially computer vision—and its ethical application to improve efficiency in both the workplace and everyday life. I am dedicated to expanding my expertise through independent projects, entrepreneurship competitions, and internships while striving to develop technologies that positively impact humanity.</p>
+                    <p>My previous experience includes extensive work with Python, building and deploying computer vision models for sports analytics, such as tracking player and ball data in basketball games. I also have hands-on experience with machine learning and predictive modeling through a variety of academic and personal projects. In addition, I am well-versed in full stack development, specializing in Typescript, React, and React Native, allowing me to deliver robust web and mobile applications.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon google-blue">
+                            <span class="material-icons">emoji_events</span>
+                        </div>
+                        <h3>Valedictorian</h3>
+                        <p>1560 SAT, National Merit Scholar, 13 AP Courses</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon google-red">
+                            <span class="material-icons">school</span>
+                        </div>
+                        <h3>4.0 GPA</h3>
+                        <p>Computer Science Major at the University of Alabama</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon google-green">
+                            <span class="material-icons">code</span>
+                        </div>
+                        <h3>Co-Founder</h3>
+                        <p>Led Team to Develop an App Published on the App Store</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon google-yellow">
+                            <span class="material-icons">groups</span>
+                        </div>
+                        <h3>Problem Solver</h3>
+                        <p>British Math Olympiad and Harvard MIT Math Tournament</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="95">TypeScript</div>
+                        <div class="skill-item" data-proficiency="92">React</div>
+                        <div class="skill-item" data-proficiency="92">Expo</div>
+                        <div class="skill-item" data-proficiency="85">React Native</div>
+                        <div class="skill-item" data-proficiency="88">Next.js</div>
+                        <div class="skill-item" data-proficiency="90">Tailwind CSS</div>
+                        <div class="skill-item" data-proficiency="90">Swift</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="92">Python</div>
+                        <div class="skill-item" data-proficiency="88">Wasp Framework</div>
+                        <div class="skill-item" data-proficiency="82">tRPC</div>
+                        <div class="skill-item" data-proficiency="85">PostgreSQL</div>
+                        <div class="skill-item" data-proficiency="90">Prisma</div>
+                        <div class="skill-item" data-proficiency="87">Express</div>
+                        <div class="skill-item" data-proficiency="87">Java</div>
+                        <div class="skill-item" data-proficiency="87">C++</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud &amp; DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="88">Railway</div>
+                        <div class="skill-item" data-proficiency="85">AWS S3</div>
+                        <div class="skill-item" data-proficiency="92">PlanetScale</div>
+                        <div class="skill-item" data-proficiency="90">Vercel</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI/ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-proficiency="85">TensorFlow</div>
+                        <div class="skill-item" data-proficiency="82">Ultralytics YOLO</div>
+                        <div class="skill-item" data-proficiency="88">Scikit-learn</div>
+                        <div class="skill-item" data-proficiency="90">OpenAI API</div>
+                        <div class="skill-item" data-proficiency="90">NumPy</div>
+                        <div class="skill-item" data-proficiency="90">Open CV</div>
+                        <div class="skill-item" data-proficiency="90">Matplotlib</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="0">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">sports_basketball</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HoopBuddy</h3>
+                        <p>Built computer vision models for basketball that track player and ball locations on the court and detect made baskets.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Ultralytics YOLO</span>
+                            <span class="tech-badge">NumPy</span>
+                            <span class="tech-badge">Matplotlib</span>
+                            <span class="tech-badge">Open CV</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shelbey25/hoopbuddyRepo/tree/main" target="_blank" class="project-link">
+                                <span class="material-icons">code</span>
+                                GitHub
+                            </a>
+                       
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">favorite_border</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Swoop: No Pressure</h3>
+                        <p>A dating app for HS students focused on safety, gamifying dating, and taking the pressure off.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">NextJS</span>
+                            <span class="tech-badge">tRPC</span>
+                            <span class="tech-badge">Prisma</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://apps.apple.com/us/app/swoop-no-pressure/id6476460117" target="_blank" class="project-link">
+                                <span class="material-icons">apps</span>
+                                App Store
+                            </a>
+                            <a href="https://projectswoop.com/" target="_blank" class="project-link">
+                                <span class="material-icons">launch</span>
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">shopping_cart</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Grocery Optimization</h3>
+                        <p>A shopping app designed for college students that suggests stores to help them save time and money.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Swift</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">Railway</span>
+                            <span class="tech-badge">Google Maps API</span>
+                        </div>
+                        <div class="project-links">
+                            <h1 class="project-link">
+                                Check Back Soon - Still in Development
+                            </h1>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">golf_course</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Golfing App</h3>
+                        <p>A golfing social media app designed to encourage competition and frequent connection between friends through golf.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Typescript</span>
+                            <span class="tech-badge">AWS S3</span>
+                            <span class="tech-badge">NextJS Rest API</span>
+                            <span class="tech-badge">Tailwind</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shelbey25/golf" target="_blank" class="project-link">
+                                <span class="material-icons">code</span>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">create</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Note Taker</h3>
+                        <p>A website that automatically starts and stops videos based on when you type, making note-taking that much easier.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Tailwind</span>
+                            <span class="tech-badge">React-Youtube</span>
+                            <span class="tech-badge">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://projectswoop.com/noteTaker" target="_blank" class="project-link">
+                                <span class="material-icons">launch</span>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="material-icons">attach_money</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FriendsBet</h3>
+                        <p>Create custom prop bets with friends using AI‑balanced odds and virtual money—like fantasy football for betting.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">ChatGPT API</span>
+                            <span class="tech-badge">Railway</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Typescript</span>
+                            <span class="tech-badge">Wasp Framework</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/shelbey25/friendsbet" target="_blank" class="project-link">
+                                <span class="material-icons">code</span>
+                                GitHub
+                            </a>
+                            <a href="https://friendsbet.up.railway.app/" target="_blank" class="project-link">
+                                <span class="material-icons">launch</span>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience &amp; Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot google-blue"></div>
+                    <div class="timeline-content">
+                        <h3>Click and Collect - AI Engineer</h3>
+                        <p class="timeline-date">2025 - present</p>
+                        <p>Modernizing businesses through targeted AI solutions that enhance efficiency and productivity.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot google-green"></div>
+                    <div class="timeline-content">
+                        <h3>Computer Science - Bachelor's Degree</h3>
+                        <p class="timeline-date">2025 - present</p>
+                        <p>4.0 GPA, University of Alabama, Honors College, AI Club, Beta Upsilon Chi</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot google-red"></div>
+                    <div class="timeline-content">
+                        <h3>CreditSpring - Intern
+                        </h3>
+                        <p class="timeline-date">2024</p>
+                        <p>Developed data-driven models to improve loan eligibility decisions for subscription-based lending.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot google-yellow"></div>
+                    <div class="timeline-content">
+                        <h3>Project Swoop LTD - Co-Founder & CEO
+                        </h3>
+                        <p class="timeline-date">2023 - 2025</p>
+                        <p>Led a six-person team, built an app, managed safety and compliance, and created business strategy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot google-blue"></div>
+                    <div class="timeline-content">
+                        <h3>The American School in London</h3>
+                        <p class="timeline-date">2021 - 2025</p>
+                        <p>4.0 GPA, 1560 SAT, 13 AP Courses, National Merit Scholar, Valedictorian</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Innovate. Inspire. Impact.</h3>
+                    <p>I'm actively seeking oppurtunites where I can contribute to meaningful projects, learn from incredible engineers, and help build products with a large scale impact.</p>
+                    <div class="contact-links">
+                        <a href="mailto:sbyousey@crimson.ua.edu" class="contact-link">
+                            <span class="material-icons">email</span>
+                            sbyousey@crimson.ua.edu
+                        </a>
+                        <a href="https://www.linkedin.com/in/shelbe-yousey-b6b133298/" target="_blank" class="contact-link">
+                            <span class="material-icons">work</span>
+                            LinkedIn Profile
+                        </a>
+                        <a href="https://github.com/shelbey25" target="_blank" class="contact-link">
+                            <span class="material-icons">code</span>
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-resume" style="
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(66,133,244,0.08);
+  padding: 2.5rem;
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+">
+  <h3 style="font-size: 2rem; color: #4285f4; margin-bottom: 1rem;">
+    View My Resume
+  </h3>
+  <p style="margin-bottom: 2rem; color: #444;">
+    Want details on my experience, skills, or education? You can download or view my resume instantly!
+  </p>
+  <a href="https://drive.google.com/uc?export=download&id=1QjFjwInMiaz_8v3TEo2np-T83xzCCOVc" target="_blank" rel="noopener"
+     style="display: inline-block; background: #4285f4; color: #fff; padding: 1rem 2rem; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 2px 8px rgba(66,133,244,0.10); transition: background 0.2s;"
+     onmouseover="this.style.background='#2962ff'"
+     onmouseout="this.style.background='#4285f4'">
+    <span class="material-icons" style="vertical-align: middle; margin-right: 8px;">picture_as_pdf</span>
+    Download PDF Resume
+  </a>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shelbe Yousey. Innovate. Inspire. Impact. 🚀</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
