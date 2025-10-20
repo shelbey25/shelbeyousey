@@ -282,7 +282,7 @@ class PortfolioApp {
                 tech_stack: ["Python", "Ultralytics YOLO", "NumPy", "Matplotlib", "Open CV"],
                 github: "https://github.com/shelbey25/hoopbuddyRepo/tree/main",
                 demo: "",
-                paper: "file:///Users/shelbe/Downloads/HoopBuddy.Research.Paper%20(2).pdf",
+                paper: "https://drive.google.com/uc?export=download&id=19dUje9tYLBTFQoQzaWGkgTikCNfZ3PJy",
                 features: [
                     "Pose estimation of the key (for homography)",
                     "Custom ball tracking model",
@@ -291,17 +291,17 @@ class PortfolioApp {
                 ]
             },
             {
-                name: "Real-Time Collaboration Platform",
-                description: "Developed a Google Docs-like collaborative editor with live cursor tracking and conflict resolution for 100+ concurrent users. Built with modern web technologies and real-time synchronization.",
-                tech_stack: ["React", "TypeScript", "WebSockets", "Node.js", "PostgreSQL"],
-                github: "https://github.com/yourusername/collab-platform",
-                demo: "https://collab-demo.netlify.app",
+                name: "Swoop: No Pressure",
+                description: "This dating app is designed for safety by using email authentication to only allow HS students at the same school to access the app. Additionally, matches are only revealed when both users say yes.",
+                tech_stack: ["TypeScript", "React Native", "NextJS", "tRPC", "Prisma", "PostgreSQL"],
+                app_store: "https://apps.apple.com/us/app/swoop-no-pressure/id6476460117",
+                website: "https://projectswoop.com/",
                 paper: "",
                 features: [
-                    "Real-time collaborative editing",
-                    "Live cursor tracking and user presence",
-                    "Conflict resolution algorithms",
-                    "Supports 100+ concurrent users"
+                    "Email authentication and user profiles",
+                    "Time based matching and swiping system",
+                    "Gamified features such as dream matches and daily rewards",
+                    "In app purchase for premium features"
                 ]
             },
             {
@@ -319,17 +319,18 @@ class PortfolioApp {
                 ]
             },
             {
-                name: "AI-Powered Code Reviewer",
-                description: "Built an ML model that analyzes code quality and suggests improvements, processing 10K+ lines of code with 94% accuracy. This project showcases my expertise in machine learning, natural language processing, and full-stack development.",
-                tech_stack: ["Python", "TensorFlow", "FastAPI", "React", "TypeScript"],
-                github: "https://github.com/yourusername/ai-code-reviewer",
-                demo: "https://ai-reviewer-demo.vercel.app",
+                name: "Golf App",
+                description: "This is a golfing app that is inspired by social media platforms like BeReal. But the posting feature is just the start as you can also track your friends' golfing stats and compete on the leaderboards.",
+                tech_stack: ["React Native", "Typescript", "AWS S3", "NextJS Rest API", "Tailwind"],
+                github: "https://github.com/shelbey25/golf",
+                demo: "",
                 paper: "",
+                summary: "https://github.com/user-attachments/files/22973247/Senior.Passion.Project.-.Shelbe.Yousey.pdf",
                 features: [
-                    "Real-time code analysis and suggestions",
-                    "Support for 10+ programming languages",
-                    "Integration with popular IDEs",
-                    "94% accuracy in detecting code smells"
+                    "Post system for sharing golf content",
+                    "Follower and following system",
+                    "Track golf rounds and stats",
+                    "Location based stroke tracking"
                 ]
             },
             {
@@ -396,6 +397,18 @@ class PortfolioApp {
                             ${project.paper ? `<a href="${project.paper}" target="_blank" class="btn btn-primary">
                                 <span class="material-icons">launch</span>
                                 Research Paper
+                            </a>` : ''}
+                            ${project.summary ? `<a href="${project.summary}" target="_blank" class="btn btn-primary">
+                                <span class="material-icons">launch</span>
+                                Project Summary
+                            </a>` : ''}
+                            ${project.app_store ? `<a href="${project.app_store}" target="_blank" class="btn btn-outline">
+                                <span class="material-icons">apps</span>
+                                App Store
+                            </a>` : ''}
+                            ${project.website ? `<a href="${project.website}" target="_blank" class="btn btn-primary">
+                                <span class="material-icons">launch</span>
+                                Website
                             </a>` : ''}
                         </div>
                     </div>
