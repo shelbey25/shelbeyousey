@@ -100,45 +100,75 @@ class PortfolioApp {
     }
 
     setupScrollAnimations() {
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    // Default observer options (for most elements)
+    const defaultObserverOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
+    // Custom options for timeline items
+    const timelineObserverOptions = {
+        threshold: 0.25,
+        rootMargin: '0px 0px -20px 0px'
+    };
 
-        // Add animation classes to elements
-        const animatedElements = document.querySelectorAll(
-            '.stat-card, .skill-category, .project-card, .timeline-item, .contact-form'
-        );
-
-        animatedElements.forEach((el, index) => {
-            // Add staggered animation delay
-            el.style.transitionDelay = `${index * 0.05}s`;
-            el.classList.add('fade-in');
-            observer.observe(el);
+    // Shared callback
+    const handleIntersect = (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
         });
+    };
 
-        // Special animations for about section
-        const aboutText = document.querySelector('.about-text');
-        const aboutStats = document.querySelector('.about-stats');
-        
-        if (aboutText) {
-            aboutText.classList.add('slide-in-left');
-            observer.observe(aboutText);
-        }
-        
-        if (aboutStats) {
-            aboutStats.classList.add('slide-in-right');
-            observer.observe(aboutStats);
-        }
+    // Default observer
+    const defaultObserver = new IntersectionObserver(handleIntersect, defaultObserverOptions);
+
+    // Timeline-specific observer
+    const timelineObserver = new IntersectionObserver(handleIntersect, timelineObserverOptions);
+
+    // Default animated elements (everything except timeline)
+    const animatedElements = document.querySelectorAll(
+        '.stat-card, .skill-category, .project-card, .contact-form'
+    );
+
+    animatedElements.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.05}s`;
+        el.classList.add('fade-in');
+        defaultObserver.observe(el);
+    });
+
+    // Timeline items with their own observer
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach((el, index) => {
+        el.style.transitionDelay = `${index * 0.05}s`;
+        el.classList.add('fade-in');
+        timelineObserver.observe(el);
+    });
+
+    // Special animations for about section
+    const aboutText = document.querySelector('.about-text');
+    const aboutStats = document.querySelector('.about-stats');
+
+    const defaultObserverOptions2 = {
+        threshold: 0.5,
+        rootMargin: '0px 0px 0px 0px'
+    };
+    const defaultObserver2 = new IntersectionObserver(handleIntersect, defaultObserverOptions2);
+
+
+    if (aboutText) {
+        aboutText.classList.add('slide-in-left');
+        defaultObserver2.observe(aboutText);
     }
+
+    if (aboutStats) {
+        aboutStats.classList.add('slide-in-right');
+        defaultObserver2.observe(aboutStats);
+    }
+}
+
+
 
     setupContactForm() {
         const contactForm = document.getElementById('contact-form');
