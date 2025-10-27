@@ -386,7 +386,7 @@ class PortfolioApp {
                 features: [
                     "Custom league creation and management",
                     "Supports creation of custom lines",
-                    "AI balanced lines",
+                    "AI balanced lines (Still in Development)",
                     "Tracks bets and leaderboards"
                 ]
             }
